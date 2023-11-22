@@ -11,8 +11,8 @@ function Header() {
     <div className="sticky top-0 z-50">
         <header style={{ boxShadow: '5px 5px 5px 5px lightgrey',borderBottom:'2px solid black' }}  className="w-full text-gray-700 bg-white border-t border-gray-900 body-font ">
           <div className="flex flex-col items-center justify-between p-6 mx-auto md:flex-row ">
-            <img style={{ width:'140px',height:'40px' }} src="https://marathon.edu.vn/images/logo-3.png" alt="" />
-            <nav className="flex flex-wrap items-center justify-center pl-6 text-base border-l gap-9 border-gray-200 mr-[640px]">
+            <img style={{ width:'60px',height:'60px',marginLeft:'50px' }} src="../src/assets/logo.png" alt="" />
+            <nav className="flex flex-wrap items-center justify-center pl-6 text-base border-l gap-9 border-gray-200 mr-[890px]">
               <NavLink to="/" className={({isActive})=>{return isActive ? active1 : active}}>
               Home
               </NavLink>
@@ -40,7 +40,7 @@ function Header() {
               Contacts
               </NavLink>
             </nav>
-            <div className="items-center w-[500px] flex gap-5">
+            <div className="items-center flex gap-5">
               <Link 
               className="px-4 py-2 text-m font-bold border border-green-500 text-green-700 transition-all duration-150 bg-white rounded shadow outline-none hover:shadow-md focus:outline-none ease">
               Góc học tập
