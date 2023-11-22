@@ -1,0 +1,27 @@
+.pro{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+}
+.bac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bac1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 50px;
+    gap: 30px;
+}
+.fontea{
+    color: #518A5D;
+    font-size: 30px;
+    font-weight: 600;
+}
+.fontea1{
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+}

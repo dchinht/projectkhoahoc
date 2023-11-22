@@ -1,15 +1,28 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useRef } from 'react'
 import HomeLayout from '../../components/HomeLayout/HomeLayout'
 import "./Home.css"
-import Form from './Form'
-import Form1 from './Form1'
 import { Link } from 'react-router-dom'
+import Carousel from '../../components/Carousel/Carousel'
+import About from '../../components/About/About'
+import Teacher from '../../components/Teacher/Teacher'
 
 function HomePage() {
+  const targetRefAbout = useRef(null);
+
+  const handleClickAbout = () => {
+    targetRefAbout.current.scrollIntoView({behavior : 'smooth'})
+  }
+
+  const targetRefTeacher = useRef(null);
+
+  const handleClickTeacher = () => {
+    targetRefTeacher.current.scrollIntoView({behavior : 'smooth'})
+  }
   return (
     <div>
-        <HomeLayout>
+        <HomeLayout handleClickTeacher={handleClickTeacher} handleClickAbout={handleClickAbout} >
             <div>
                 <div className='home'>
                     <div style={{ paddingTop: '300px' }} >
@@ -22,12 +35,15 @@ function HomePage() {
                     
                 </div>
             </div>
-            <div>
-                <Form1/>
+            <div style={{ marginTop:'100px' }}>
+                <Carousel/>
             </div>
             <div>
-                <Form/>
-            </div> <br/> <br/>
+                <About targetRefAbout={targetRefAbout} />
+            </div> 
+            <div>
+                <Teacher targetRefTeacher={targetRefTeacher} />
+            </div><br/> <br/>
         </HomeLayout>
     </div>
   )

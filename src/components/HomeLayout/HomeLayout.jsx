@@ -3,14 +3,12 @@
 import React from 'react'
 import Header from '../Header/Header.jsx'
 import Footer from '../Footer/Footer.jsx'
-// import Submit from '../khoahoc/Submit'
 
-function HomeLayout({children}) {
+function HomeLayout({children,handleClickAbout,handleClickTeacher}) {
   return (
     <div>
-        <Header/>
+        <Header handleClickTeacher={handleClickTeacher} handleClickAbout={handleClickAbout}/>
         {children}
-        {/* <Submit/> */}
         <Footer/>
     </div>
   )

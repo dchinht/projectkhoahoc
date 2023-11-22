@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css"
 
-function Header() {
+function Header({handleClickAbout,handleClickTeacher}) {
   const [isHover,setIsHover] = useState(false);
   const active = "font-medium hover:text-green-900"
   const active1 = "font-semibold text-green-700 border-b-2 border-green-700"
@@ -12,16 +13,16 @@ function Header() {
         <header style={{ boxShadow: '5px 5px 5px 5px lightgrey',borderBottom:'2px solid black' }}  className="w-full text-gray-700 bg-white border-t border-gray-900 body-font ">
           <div className="flex flex-col items-center justify-between p-6 mx-auto md:flex-row ">
             <img style={{ width:'60px',height:'60px',marginLeft:'50px' }} src="../src/assets/logo.png" alt="" />
-            <nav className="flex flex-wrap items-center justify-center pl-6 text-base border-l gap-9 border-gray-200 mr-[890px]">
+            <nav className="flex flex-wrap items-center justify-center pl-6 text-base border-l gap-9 border-gray-200 mr-[810px]">
               <NavLink to="/" className={({isActive})=>{return isActive ? active1 : active}}>
               Home
               </NavLink>
               <NavLink to="/khoahoc" className={({isActive})=>{return isActive ? active1 : active}}>
                 Khoá Học
               </NavLink>
-              <NavLink to="/teacher" className={({isActive})=>{return isActive ? active1 : active}}>
-                Giáo viên
-              </NavLink>
+              <Link onClick={handleClickTeacher} className="font-medium hover:text-green-900">
+                 Giáo viên
+              </Link>
               <NavLink>
               <div className="font-medium hover:text-green-900"
               onMouseOver={()=>setIsHover(true)}
@@ -36,6 +37,9 @@ function Header() {
                  </ul>
               </div>
               </NavLink>
+              <Link onClick={handleClickAbout} className="font-medium hover:text-green-900">
+              About
+              </Link>
               <NavLink to="/contact" className={({isActive})=>{return isActive ? active1 : active}}>
               Contacts
               </NavLink>
