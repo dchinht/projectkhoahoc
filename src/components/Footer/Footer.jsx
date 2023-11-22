@@ -23,7 +23,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="sr-only"> Facebook </span>
+                  <span  className="sr-only"> Facebook </span>
                   <svg
                     className="w-6 h-6"
                     fill="currentColor"
