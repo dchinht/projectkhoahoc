@@ -29,7 +29,7 @@ function Header({handleClickAbout,handleClickTeacher}) {
               onMouseOut={()=>setIsHover(false)}
               >
                  <p className="relative">Education</p>
-                 <ul className={`${ isHover ? "visible" : "invisible" } w-[250px] bg-white absolute p-2 mt-1 rounded-md border border-gray-600`}>
+                 <ul className={`${ isHover ? "visible" : "invisible" } w-[250px] bg-white absolute p-2 rounded-md border border-gray-600`}>
                     <Link className="hover:text-green-300 ">Chương trình chính quy</Link> <br/>
                     <Link className="hover:text-green-300 ">Chương trình IELTS</Link>  <br/>
                     <Link className="hover:text-green-300 ">Chương trình lập trình</Link>  <br/>
