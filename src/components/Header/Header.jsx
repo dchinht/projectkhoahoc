@@ -12,7 +12,7 @@ function Header({handleClickAbout,handleClickTeacher}) {
     <div className="sticky top-0 z-50">
         <header style={{ boxShadow: '5px 5px 5px 5px lightgrey',borderBottom:'2px solid black' }}  className="w-full text-gray-700 bg-white border-t border-gray-900 body-font ">
           <div className="flex flex-col items-center justify-between p-6 mx-auto md:flex-row ">
-            <img style={{ width:'60px',height:'60px',marginLeft:'50px' }}  src="../src/assets/logo.png" alt="" />
+            <img style={{ width:'60px',height:'60px',marginLeft:'50px' }}  src="../src/assets/logohome.png" alt="" />
             <nav className="flex flex-wrap items-center justify-center pl-6 text-base border-l gap-9 border-gray-200 mr-[810px]">
               <NavLink to="/" className={({isActive})=>{return isActive ? active1 : active}}>
               Home
