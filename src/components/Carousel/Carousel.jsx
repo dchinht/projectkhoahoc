@@ -15,11 +15,11 @@ function Carousel() {
   const carousel = [
     {
       id: 1,
-      img: "https://img.lovepik.com//back_pic/05/61/36/115b4890e8eab7f.jpg_wh300.jpg",
+      img: "https://marathon.edu.vn/images/middle-banner-promo-thang10-pc.png",
     },
     {
       id: 2,
-      img: "https://img.lovepik.com//back_pic/05/61/79/085b4cc76572350.jpg_wh300.jpg",
+      img: "https://marathon.edu.vn/images/middle-banner-codi-pc.png",
     },
     {
       id: 3,

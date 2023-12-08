@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import Carousel from '../../components/Carousel/Carousel'
 import About from '../../components/About/About'
 import Teacher from '../../components/Teacher/Teacher'
+import CouseItem from '../../components/CourseList/CouseItem'
 
 function HomePage() {
   const targetRefAbout = useRef(null);
@@ -20,9 +21,15 @@ function HomePage() {
   const handleClickTeacher = () => {
     targetRefTeacher.current.scrollIntoView({behavior : 'smooth'})
   }
+
+  const targetRefCourse = useRef(null);
+
+  const handleClickCourse = () => {
+    targetRefCourse.current.scrollIntoView({behavior : 'smooth'})
+  }
   return (
     <div>
-        <HomeLayout handleClickTeacher={handleClickTeacher} handleClickAbout={handleClickAbout} >
+        <HomeLayout handleClickCourse={handleClickCourse} handleClickTeacher={handleClickTeacher} handleClickAbout={handleClickAbout} >
             <div>
                 <div className='home'>
                     <div style={{ paddingTop: '300px' }} >
@@ -41,6 +48,9 @@ function HomePage() {
             <div>
                 <About targetRefAbout={targetRefAbout} />
             </div> 
+            <div>
+                <CouseItem targetRefCourse={targetRefCourse} />
+            </div>
             <div>
                 <Teacher targetRefTeacher={targetRefTeacher} />
             </div><br/> <br/>

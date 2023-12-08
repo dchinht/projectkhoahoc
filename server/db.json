@@ -1,0 +1,316 @@
+{
+  "eduType": [
+    {
+      "id": 1,
+      "name": "Chương trình phổ thông",
+      "subdomain": "/education/general-education"
+    },
+    {
+      "id": 2,
+      "name": "Chương trình Ilest",
+      "subdomain": "/education/english"
+    },
+    {
+      "id": 3,
+      "name": "Chương trình lập trình",
+      "subdomain": "/education/programming"
+    }
+  ],
+  "teacherlist": [
+    {
+      "id": 1,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/640px-Bill_Gates_2018.jpg",
+      "name": "Bill Gates",
+      "mon": "Phần mềm máy tính"
+    },
+    {
+      "id": 2,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/52/John_D._Rockefeller%2C_Sr.jpg",
+      "name": "J.D.Rockerfeller",
+      "mon": "Dầu mỏ"
+    },
+    {
+      "id": 3,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg/250px-Elon_Musk_Royal_Society_%28crop1%29.jpg",
+      "name": "Elon Musk",
+      "mon": "Xe điện"
+    },
+    {
+      "id": 4,
+      "img": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-849879716.jpg?crop=1xw:1.0xh;center,top&resize=640:*",
+      "name": "Waren Buffett",
+      "mon": "Đầu tư"
+    }
+  ],
+  "couselist": [
+    {
+      "id": 1,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2Fpdh9siK1kKfNB51wUrKi9lD3mkdKIv09KvdEBmeD.png&w=1920&q=75",
+      "name": "Vật lý 12",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 2,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FmrqWI6JGXQHVfYZseoWuumk6QI1rHAsX6RcEk2HV.png&w=1920&q=75",
+      "name": "Toán học 12",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 3,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FTdQ7Xb5mbOsc25en4dEvPGtqOQn05eBSozrPEQvm.png&w=1920&q=75",
+      "name": "Hoá học 12",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 4,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FwTmr9V5hLZFburnt6qfVOXSlC01kTWfFnvEa4WiE.png&w=1920&q=75",
+      "name": "Sinh học 12",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 5,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FVWvqQtqi9q8Brmd8bSHv2FntCgr7CT5sFt1tIpUL.png&w=1920&q=75",
+      "name": "Tiếng anh 12",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 6,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FEoRwrOsXrguUDxUPGMN59EHiU4JmwJXjpKVeOs5n.png&w=1920&q=75",
+      "name": "Ngữ văn 12",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 7,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FEoRwrOsXrguUDxUPGMN59EHiU4JmwJXjpKVeOs5n.png&w=1920&q=75",
+      "name": "Ngữ văn 11",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 8,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FEoRwrOsXrguUDxUPGMN59EHiU4JmwJXjpKVeOs5n.png&w=1920&q=75",
+      "name": "Ngữ văn 10",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 9,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FIRweAnKYMgPkDmjtV1LiiV9mHoLw3QfN3DZXmGVh.png&w=1920&q=75",
+      "name": "Đánh giá năng lực ĐHQG-HN",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 10,
+      "img": "https://marathon.edu.vn/_next/image?url=https%3A%2F%2Fcdn.marathon.edu.vn%2Fuploads%2FWNZ8BYScZZKKtUEdd2NZMJXPnrH5KsHEkpR7tB31.png&w=1920&q=75",
+      "name": "Đánh giá năng lực ĐHQG-HCM",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 15000000,
+      "type": "gec"
+    },
+    {
+      "id": 11,
+      "img": "https://think.edu.vn/wp-content/uploads/2023/09/du-hoc-my-can-bang-tieng-anh-gi.jpg",
+      "name": "Tiếng anh 12",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 12,
+      "img": "https://think.edu.vn/wp-content/uploads/2023/09/du-hoc-my-can-bang-tieng-anh-gi.jpg",
+      "name": "Tiếng anh 11",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 13,
+      "img": "https://think.edu.vn/wp-content/uploads/2023/09/du-hoc-my-can-bang-tieng-anh-gi.jpg",
+      "name": "Tiếng anh 10",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 14,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDuvabsaQ5vAKKpDG8pRqYHDso5brYjhdRg6mJVTVHvmBixEtZ9QSnAfkS1Llk2YZW7o&usqp=CAU",
+      "name": "ILEST",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 15,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDuvabsaQ5vAKKpDG8pRqYHDso5brYjhdRg6mJVTVHvmBixEtZ9QSnAfkS1Llk2YZW7o&usqp=CAU",
+      "name": "TOIC",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 16,
+      "img": "https://cdn.tgdd.vn/2020/05/content/top-5-ung-dung-ho-tro-hoc-tieng-anh-hieu-qua-hoan-toan-mien-phi-background-800x450.jpg",
+      "name": "English Bộ Giáo Dục 2024",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 17,
+      "img": "https://ss.edu.vn/wp-content/uploads/2022/08/AI-NEN-HOC-1-1024x576.png",
+      "name": "Giao Tiếp Đi Làm",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 18,
+      "img": "https://ss.edu.vn/wp-content/uploads/2022/08/GIAO-TIEP-Banner-1-1-1.png",
+      "name": "Giao Tiếp",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 19,
+      "img": "https://cdn.tgdd.vn/2020/05/content/top-5-ung-dung-ho-tro-hoc-tieng-anh-hieu-qua-hoan-toan-mien-phi-background-800x450.jpg",
+      "name": "English Bộ Giáo Dục 2023",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 20,
+      "img": "https://ss.edu.vn/wp-content/uploads/2022/08/GIAO-TIEP-Banner-1-1-1.png",
+      "name": "Giao Tiếp 1:1",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "ec"
+    },
+    {
+      "id": 21,
+      "img": "https://ironhackvietnam.edu.vn/wp-content/uploads/2021/06/khoa-hoc-lap-trinh-cap-toc-1-600x403.jpg",
+      "name": "Lập Trình LV1",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 22,
+      "img": "https://ironhackvietnam.edu.vn/wp-content/uploads/2021/06/khoa-hoc-lap-trinh-cap-toc-1-600x403.jpg",
+      "name": "Lập Trình LV2",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 23,
+      "img": "https://ironhackvietnam.edu.vn/wp-content/uploads/2021/06/khoa-hoc-lap-trinh-cap-toc-1-600x403.jpg",
+      "name": "Lập Trình LV3",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 24,
+      "img": "https://ironhackvietnam.edu.vn/wp-content/uploads/2021/06/khoa-hoc-lap-trinh-cap-toc-1-600x403.jpg",
+      "name": "Lập Trình LV4",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 25,
+      "img": "https://ironhackvietnam.edu.vn/wp-content/uploads/2021/01/html-la-gi-600x403.jpg",
+      "name": "HTML",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 26,
+      "img": "https://ironhackvietnam.edu.vn/wp-content/uploads/2021/01/html-la-gi-600x403.jpg",
+      "name": "HTML5",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 27,
+      "img": "https://rikkei.edu.vn/wp-content/uploads/2022/10/tai-sao-nen-hoc-lap-trinh-c-1.jpg",
+      "name": "Backend",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 28,
+      "img": "https://rikkei.edu.vn/wp-content/uploads/2022/10/tai-sao-nen-hoc-lap-trinh-c-1.jpg",
+      "name": "Fontend",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 29,
+      "img": "https://genetic.vn/wp-content/uploads/2021/12/khoa-hoc-lap-trinh-Java-Da-Nang.jpg",
+      "name": "AI Trí tuệ nhân tạo",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    },
+    {
+      "id": 30,
+      "img": "https://phambinh.net/wp-content/uploads/2020/07/hoclaptrinh.jpg",
+      "name": "React",
+      "desc": "Khóa học này là con đường ngắn nhất đến với thành công của bạn. Còn chần chờ gì nữa mà không tìm hiểu ngay!",
+      "price": 150000000,
+      "type": "pc"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullname": "dchinht",
+      "username": "admin",
+      "email": "dchint@gmail.com",
+      "password": "123",
+      "isAdmin": "Admin",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "fullname": "dchinht",
+      "username": "admin",
+      "email": "dchint@gmail.com",
+      "password": "123",
+      "isAdmin": "User",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "fullname": "dchinht",
+      "username": "User",
+      "email": "dchint@gmail.com",
+      "password": "123",
+      "isAdmin": "User",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU"
+    }
+  ]
+}

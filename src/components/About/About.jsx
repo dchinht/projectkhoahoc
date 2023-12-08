@@ -4,8 +4,12 @@
 import React from 'react'
 import "./About.css"
 import { Link } from 'react-router-dom'
+import { notification } from '../../utils/helper'
 
 function About({targetRefAbout}) {
+   const handlesubmit = () => {
+      notification('Submit success')
+   }
   return (
     <div ref={targetRefAbout} >
         <div className='fo1'>
@@ -42,7 +46,7 @@ function About({targetRefAbout}) {
                  <input className='in1' type="text" placeholder='  Môn học quan tâm?'/>
               </div>
               <Link to="" className='bucha'>
-                 <button className='bu11'>GửI</button>
+                 <button onClick={handlesubmit} className='bu11'>GửI</button>
               </Link> 
            </div>
         </div>

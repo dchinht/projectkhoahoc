@@ -202,7 +202,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <p className="mt-8 text-xs text-gray-800">© 2022 Comany Name</p>
+          <p className="mt-8 text-xs text-gray-800">© 2023 CEO : Dương Chính Thắng</p>
         </div>
       </footer>
     </div>
