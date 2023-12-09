@@ -8,9 +8,15 @@ import { useFormik } from "formik";
 // random id theo dạng string
 import { v4 as uuidv4 } from "uuid";
 import { useEffect } from "react";
-import { getListSignUp, getListUser, updateUser } from "../../../redux/slices/signUpSlice";
+import {
+  getListSignUp,
+  getListUser,
+  updateUser,
+} from "../../../redux/slices/signUpSlice";
 import { notification } from "../../../utils/helper";
 import { useDispatch, useSelector } from "react-redux";
+import SingleSelect from "../../../components/Dropdown/SingleSelect";
+import { roleList } from "../../../contant";
 
 const style = {
   position: "absolute",
@@ -24,7 +30,18 @@ const style = {
   p: 4,
 };
 
-function UserModal({isopen, handleClose, isEdit, data }) {
+function UserModal({
+  isopen,
+  handleClose,
+  isEdit,
+  data = {
+    fullname: "",
+    username: "",
+    email: "",
+    password: "",
+    isAdmin : 2,
+  },
+}) {
   const { signUpList } = useSelector((state) => state.signUp);
   const dispatch = useDispatch();
 
@@ -36,28 +53,30 @@ function UserModal({isopen, handleClose, isEdit, data }) {
       .string()
       .required("Please enter password")
       .min(3, "Minimun password is 3 characters"),
-    cpassword: yup
-      .string()
-      .required("Please enter cpassword")
-      .oneOf([yup.ref("password")], "Password not match"),
   });
 
   const formik = useFormik({
-    initialValues: data,
+    initialValues: {
+      fullname: data.fullname,
+      username: data.username,
+      email: data.email,
+      password: data.password,
+      role: data.isAdmin ? 1 : 2,
+    },
     validationSchema: validationSchema,
     onSubmit: (values) => {
       if (isEdit == 1) {
         const newData = {
-          id : data.id,
+          id: data.id,
           fullname: values.fullname,
           username: values.username,
           email: values.email,
           password: values.password,
-          isAdmin: data.isAdmin,
+          isAdmin: values.role == 1 ? true : false,
           avatar: data.avatar,
-        }
-        console.log(2)
-        dispatch(updateUser({userId : data.id,userData : newData}))
+        };
+        console.log(2);
+        dispatch(updateUser({ userId: data.id, userData: newData }));
         window.location.reload();
       } else {
         const newData = {
@@ -66,7 +85,7 @@ function UserModal({isopen, handleClose, isEdit, data }) {
           username: values.username,
           email: values.email,
           password: values.password,
-          isAdmin: "User",
+          isAdmin:  values.role == 1 ? true : false,
           avatar:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU",
         };
@@ -83,7 +102,6 @@ function UserModal({isopen, handleClose, isEdit, data }) {
           window.location.reload();
         }
       }
-      
     },
   });
 
@@ -94,7 +112,7 @@ function UserModal({isopen, handleClose, isEdit, data }) {
   return (
     <div>
       <Modal
-        open={isopen == 1 ? true : false}
+        open={isopen ? true : false}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
@@ -104,7 +122,7 @@ function UserModal({isopen, handleClose, isEdit, data }) {
             <div className="flex justify-between items-center">
               <div />
               <h1 style={{ fontSize: "30px ", fontWeight: "700" }}>
-                {isEdit == 1  ? "EDIT" : "ADD USER"}
+                {isEdit ? "EDIT" : "ADD USER"}
               </h1>
               <div onClick={handleClose}>
                 <CancelIcon />
@@ -158,12 +176,21 @@ function UserModal({isopen, handleClose, isEdit, data }) {
                     formik.touched.password && Boolean(formik.errors.password)
                   }
                 />
+                <SingleSelect
+                  name={"Role"}
+                  width="300px"
+                  type="text"
+                  required={true}
+                  value={formik.values.role}
+                  onChange={formik.handleChange("role")}
+                  options={roleList}
+                />
                 <div className="flex justify-center">
-                  <button 
+                  <button
                     type="submit"
                     className="mt-5 w-[150px] flex justify-center bg-green-400  hover:bg-green-500 text-gray-100 p-3  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500"
                   >
-                    {isEdit == 1 ? "EDIT" : "ADD USER"}
+                    {isEdit ? "EDIT" : "ADD USER"}
                   </button>
                 </div>
               </form>

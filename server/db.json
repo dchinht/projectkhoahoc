@@ -291,16 +291,7 @@
       "username": "admin",
       "email": "dchint@gmail.com",
       "password": "123",
-      "isAdmin": "Admin",
-      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU"
-    },
-    {
-      "id": 2,
-      "fullname": "dchinht",
-      "username": "admin",
-      "email": "dchint@gmail.com",
-      "password": "123",
-      "isAdmin": "User",
+      "isAdmin": true,
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU"
     },
     {
@@ -309,7 +300,16 @@
       "username": "User",
       "email": "dchint@gmail.com",
       "password": "123",
-      "isAdmin": "User",
+      "isAdmin": false,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU"
+    },
+    {
+      "id": "7b4ce987-4261-418c-91de-9a5724ee4bd6",
+      "fullname": "gdsf",
+      "username": "gsg5588",
+      "email": "gs@gmail.com",
+      "password": "123",
+      "isAdmin": false,
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU"
     }
   ]

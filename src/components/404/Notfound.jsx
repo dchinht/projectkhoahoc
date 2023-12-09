@@ -5,32 +5,31 @@ import { Link } from "react-router-dom";
 
 function NotFoundPage() {
   return (
-    <div>
-      <div className="h-screen w-screen bg-gray-50 flex items-center">
-        <div className="container flex flex-col md:flex-row items-center justify-between px-5 text-gray-700">
-          <div className="w-full lg:w-1/2 mx-8">
-            <div className="text-7xl text-green-500 font-dark font-extrabold mb-8">
-              {" "}
-              404
+    <div className="lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
+      <div className="xl:pt-24 w-full xl:w-1/2 relative pb-12 lg:pb-0">
+        <div className="relative">
+          <div className="absolute">
+            <div className>
+              <h1 className="my-2 text-gray-800 font-bold text-2xl">
+                Looks like you've found the doorway to the great nothing
+              </h1>
+              <p className="my-2 text-gray-800">
+                Sorry about that! Please visit our hompage to get where you need
+                to go.
+              </p>
+
+              <button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">
+                <Link to="/">Back to homepage</Link>
+              </button>
             </div>
-            <p className="text-2xl md:text-3xl font-light leading-normal mb-8">
-              Sorry we couldn't find the page you're looking for
-            </p>
-            <a
-              href="#"
-              className="px-5 inline py-3 text-sm font-medium leading-5 shadow-2xl text-white transition-all duration-400 border border-transparent rounded-lg focus:outline-none bg-green-600 active:bg-red-600 hover:bg-red-700"
-            >
-             <Link to="/">Back to homepage</Link>
-            </a>
           </div>
-          <div className="w-full lg:flex lg:justify-end lg:w-1/2 mx-5 my-12">
-            <img
-              src="https://user-images.githubusercontent.com/43953425/166269493-acd08ccb-4df3-4474-95c7-ad1034d3c070.svg"
-              className
-              alt="Page not found"
-            />
+          <div>
+            <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
           </div>
         </div>
+      </div>
+      <div>
+        <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
       </div>
     </div>
   );

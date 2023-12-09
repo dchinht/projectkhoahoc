@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from "axios"
 
 export const getListEduType = createAsyncThunk("getListEduType", async () => {
-    const res = await axios.get("http://localhost:5000/eduType")
+    const res = await axios.get(import.meta.env.VITE_API_URL + "eduType")
     return res.data
 })
 

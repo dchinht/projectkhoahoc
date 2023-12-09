@@ -45,7 +45,7 @@ function Signup() {
           username : values.username,
           email : values.email,
           password : values.password,
-          isAdmin : "User",
+          isAdmin : false,
           avatar : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83_4nYbepKSRjeX5LgJcF8imUzSjkC49iXg&usqp=CAU"
         }
         // check username cos toofn taij hay kh

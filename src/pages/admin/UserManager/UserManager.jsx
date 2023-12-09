@@ -5,14 +5,14 @@ import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import UserTable from "./UserTable";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { getListUser } from "../../../redux/slices/signUpSlice";
+import { getListUser, searchByName } from "../../../redux/slices/signUpSlice";
 import * as React from "react";
 import UserModal from "./UserModal";
 import { useState } from "react";
 
 function UserManager() {
-  const [open, setOpen] = React.useState(0);
-  const [isEdit, setIsEdit] = React.useState(0);
+  const [open, setOpen] = React.useState(false);
+  const [isEdit, setIsEdit] = React.useState(false);
   const [user, setUser] = useState({
     fullname: "",
     username: "",
@@ -20,11 +20,11 @@ function UserManager() {
     password: "",
   });
 
-  const handleOpen = () => setOpen(1);
+  const handleOpen = () => setOpen(true);
 
   const handleClose = () => {
-    setIsEdit(0);
-    setOpen(0);
+    setIsEdit(false);
+    setOpen(false);
     setUser({
       fullname: "",
       username: "",
@@ -34,21 +34,20 @@ function UserManager() {
   };
 
   const handleEdit = (item) => {
-    const newData = {
-      fullname: item.fullname,
-      username: item.username,
-      email:  item.email,
-      password:  item.password,
-    }
-    setOpen(1);
-    setIsEdit(1);
-    setUser(newData)
+    setOpen(true);
+    setIsEdit(true);
+    setUser(item);
   };
 
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getListUser());
   }, []);
+
+  const [searchValue, setSearchValue] = useState("");
+  const handleSearch = () => {
+    dispatch(searchByName(searchValue));
+  };
 
   return (
     <div>
@@ -66,8 +65,16 @@ function UserManager() {
             </div>
             <div className="pl-[20px] pr-[20px] mt-[50px] bg-[#DADADA] h-[100px] flex justify-between">
               <div className=" gap-[10px] flex items-center">
-                <TestFields placeholder="Search here..." />
-                <SearchIcon style={{ fontSize: "40px", marginTop: "5px" }} />
+                <TestFields
+                  value={searchValue}
+                  onChange={(e) => setSearchValue(e.target.value)}
+                  placeholder="Search here..."
+                />
+                <button  onClick={handleSearch}>
+                  <SearchIcon
+                    style={{ fontSize: "40px", marginTop: "5px" }}
+                  />
+                </button>
               </div>
               <div className="flex items-center">
                 <DensityMediumIcon />
@@ -79,7 +86,12 @@ function UserManager() {
           </div>
         </div>
         {open && (
-          <UserModal data={user} isEdit={isEdit} isopen={open} handleClose={handleClose} />
+          <UserModal
+            data={user}
+            isEdit={isEdit}
+            isopen={open}
+            handleClose={handleClose}
+          />
         )}
       </AdminLayout>
     </div>

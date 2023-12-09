@@ -33,7 +33,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-export default function UserTable({handleEdit}) {
+export default function UserTable({ handleEdit }) {
   const { signUpList } = useSelector((state) => state.signUp);
   const dispatch = useDispatch();
 
@@ -80,13 +80,22 @@ export default function UserTable({handleEdit}) {
                 <StyledTableCell align="left">{item.username}</StyledTableCell>
                 <StyledTableCell align="left">{item.email}</StyledTableCell>
                 <StyledTableCell align="left">
-                  <button className=" bg-black rounded-[5px] text-white w-[70px] pb-[5px] pl-[10px] pr-[10px] pt-[5px]">
-                    {item.isAdmin}
-                  </button>
+                  {item.isAdmin ? (
+                    <button className=" bg-red-600 rounded-[5px] text-white w-[70px] pb-[5px] pl-[10px] pr-[10px] pt-[5px]">
+                      Admin
+                    </button>
+                  ) : (
+                    <button className=" bg-green-600 rounded-[5px] text-white w-[70px] pb-[5px] pl-[10px] pr-[10px] pt-[5px]">
+                      User
+                    </button>
+                  )}
                 </StyledTableCell>
                 <StyledTableCell align="left">
                   <div className="flex gap-[5px]">
-                    <button onClick={()=>handleEdit(item)} className=" text-slate-950 bg-yellow-300 rounded-[5px] w-[30px] h-[30px]">
+                    <button
+                      onClick={() => handleEdit(item)}
+                      className=" text-slate-950 bg-yellow-300 rounded-[5px] w-[30px] h-[30px]"
+                    >
                       <ModeIcon />
                     </button>
                     <button
