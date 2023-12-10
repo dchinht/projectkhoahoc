@@ -149,7 +149,6 @@ function CheckOut() {
       localStorage.setItem("history",JSON.stringify([...history,newData]))
       localStorage.removeItem("cart")
       navigate('/')
-      window.location.reload();
     },
   });
 

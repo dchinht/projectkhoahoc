@@ -136,7 +136,6 @@ const signUpSlice = createSlice({
     builder.addCase(deleteUser.fulfilled, (state) => {
       state.isLoadingSignUp = false;
       notification("Delete Success");
-      window.location.reload();
     });
     builder.addCase(deleteUser.rejected, (state) => {
       state.isLoadingSignUp = false;

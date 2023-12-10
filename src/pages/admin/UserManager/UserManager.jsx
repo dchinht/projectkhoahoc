@@ -49,6 +49,7 @@ function UserManager() {
     dispatch(searchByName(searchValue));
   };
 
+
   return (
     <div>
       <AdminLayout>

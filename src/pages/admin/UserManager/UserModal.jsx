@@ -64,7 +64,7 @@ function UserModal({
       role: data.isAdmin ? 1 : 2,
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       if (isEdit == 1) {
         const newData = {
           id: data.id,
@@ -76,8 +76,8 @@ function UserModal({
           avatar: data.avatar,
         };
         console.log(2);
-        dispatch(updateUser({ userId: data.id, userData: newData }));
-        window.location.reload();
+        await dispatch(updateUser({ userId: data.id, userData: newData }));
+        await dispatch(getListUser())
       } else {
         const newData = {
           id: uuidv4(),
@@ -98,8 +98,8 @@ function UserModal({
         if (checkUsername || checkEmail) {
           notification("đăng kí kh thành công", "error");
         } else {
-          dispatch(getListSignUp(newData));
-          window.location.reload();
+          await dispatch(getListSignUp(newData));
+          await dispatch(getListUser())
         }
       }
     },

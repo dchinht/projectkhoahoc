@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import ModeIcon from "@mui/icons-material/Mode";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import Swal from "sweetalert2";
-import { deleteUser } from "../../../redux/slices/signUpSlice";
+import { deleteUser, getListUser } from "../../../redux/slices/signUpSlice";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -42,11 +42,13 @@ export default function UserTable({ handleEdit }) {
       title: "Bạn có muốn xoá không?",
       showCancelButton: true,
       confirmButtonText: "Yes",
-    }).then((result) => {
+    }).then(async (result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         Swal.fire("Delete Success", "", "success").then(
-          dispatch(deleteUser(item))
+          await dispatch(deleteUser(item))
+        ).then(
+          await dispatch(getListUser())
         );
       }
     });
